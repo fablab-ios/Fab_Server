@@ -22,10 +22,7 @@ def tickets():
     )
     cursor = database.cursor()
 
-    since_timestamp = request.args.get("since")
-    if since_timestamp is None:
-        since_timestamp = "0"
-    cursor.execute("SELECT * FROM tickets where timestamp > '" + since_timestamp + "'")
+    cursor.execute("SELECT * FROM tickets")
     data = cursor.fetchall()
 
     cursor.close()
