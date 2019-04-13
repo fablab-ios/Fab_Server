@@ -33,11 +33,12 @@ def tickets():
 
     all = "SELECT * FROM tickets"
 
-    cursor.execute(all)
+    cursor.execute(command)
     data = cursor.fetchall()
 
     cursor.close()
     database.close()
+
     return json.dumps(data)
 
 
