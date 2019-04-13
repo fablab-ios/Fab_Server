@@ -15,7 +15,7 @@ def info():
 
 @app.route('/tickets', methods=["GET"])
 def tickets():
-    result_filter = unquote(request.data["filter"])
+    result_filter = unquote(request.args["filter"])
     database = mysql.connector.connect(
         host=credentials["host"],
         user=credentials["user"],
