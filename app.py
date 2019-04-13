@@ -24,12 +24,12 @@ def tickets():
     )
     cursor = database.cursor()
 
-    like_filter = "%(" + result_filter + ")%"
+    like_filter = "'%" + result_filter + "%'"
     command = "SELECT * FROM tickets" \
-              " WHERE ticket_name LIKE '" + like_filter + \
-              "' OR student_name LIKE '" + like_filter + \
-              "' OR ticket_number LIKE '" + like_filter + \
-              "' OR email LIKE '" + like_filter + "'"
+              " WHERE ticket_name LIKE " + like_filter + \
+              " OR student_name LIKE " + like_filter + \
+              " OR ticket_number LIKE " + like_filter + \
+              " OR email LIKE " + like_filter
 
     all = "SELECT * FROM tickets"
 
