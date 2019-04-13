@@ -14,6 +14,7 @@ def info():
 
 @app.route('/tickets', methods=["GET"])
 def tickets():
+    result_filter = request.values["filter"]
     database = mysql.connector.connect(
         host=credentials["host"],
         user=credentials["user"],
@@ -22,7 +23,16 @@ def tickets():
     )
     cursor = database.cursor()
 
-    cursor.execute("SELECT * FROM tickets")
+    like_filter = result_filter + "%"
+    command = "SELECT * FROM tickets" \
+              "WHERE ticket_name LIKE " + like_filter + \
+              "OR student_name LIKE " + like_filter + \
+              "OR ticket_number LIKE " + like_filter + \
+              "OR email LIKE " + like_filter
+
+    all = "SELECT * FROM tickets"
+
+    cursor.execute(all)
     data = cursor.fetchall()
 
     cursor.close()
