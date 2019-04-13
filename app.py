@@ -1,6 +1,7 @@
 from flask import Flask, request
 import json
 import mysql.connector
+from urllib.parse import unquote
 
 app = Flask(__name__)
 
@@ -14,8 +15,7 @@ def info():
 
 @app.route('/tickets', methods=["GET"])
 def tickets():
-    print(request.query_string)
-    result_filter = request.values["filter"]
+    result_filter = unquote(request.values["filter"])
     database = mysql.connector.connect(
         host=credentials["host"],
         user=credentials["user"],
