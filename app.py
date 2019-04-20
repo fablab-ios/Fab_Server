@@ -10,7 +10,9 @@ credentials = json.load(open("credentials.json", "r"))
 
 @app.route('/info', methods=["GET"])
 def info():
-    return open("info.txt", "r").read()
+    return json.dumps({
+        "info": open("info.txt", "r").read()
+    })
 
 
 @app.route('/tickets', methods=["GET"])
