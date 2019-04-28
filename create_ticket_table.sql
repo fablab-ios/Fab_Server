@@ -3,9 +3,7 @@ CREATE TABLE tickets (
   date varchar(50) NOT NULL,
   time varchar(50) NOT NULL,
   ticket_name varchar(100) NOT NULL,
-  student_name varchar(100) NOT NULL,
   email varchar(100) NOT NULL,
   status varchar(100) NOT NULL,
-  notes varchar(1000) NOT NULL,
   PRIMARY KEY(ticket_number)
 );
