@@ -50,6 +50,7 @@ def notifications(email):
     data = cursor.fetchall()
 
     cursor.execute("DELETE FROM notifications where email='" + email + "';")
+    database.commit()
 
     cursor.close()
     database.close()
