@@ -46,10 +46,10 @@ def notifications(email):
     )
     cursor = database.cursor()
 
-    cursor.execute("SELECT * FROM notifications where email='" + email + "'")
+    cursor.execute("SELECT * FROM notifications where email='" + email + "';")
     data = cursor.fetchall()
 
-    cursor.execute("DELETE FROM notifications where email='" + email + "'")
+    cursor.execute("DELETE FROM notifications where email='" + email + "';")
 
     cursor.close()
     database.close()
