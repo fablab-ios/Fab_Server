@@ -1,4 +1,26 @@
-Hours of operation:
+ABOUT FABLAB:
+
+An incubator for ideas and a place to engage people’s imaginations,
+the UVM FabLab makes rapid-prototyping tools available to UVM students and faculty.
+The lab provides the opportunity for interaction in developing and testing innovative
+products and designs.We encourage projects that support research, innovation and creativity,
+and student work that is supported by coursework and professors.
+
+The UVM FabLab is funded by the College of Engineering and
+Mathematical Sciences with support from the Office of the Vice President for Research.
+
+In 2015 we received new lab furniture and work stations thanks to a
+generous donation from Production Basics, Inc.
+
+
+EQUIPMENT ON SITE INCLUDES:
+- CAD/CAM software
+- 3D Printing
+- Laser Cutting and Engraving
+- Solder Station
+
+
+HOURS OF OPERATION:
 
 Monday
 12pm -3pm, 4:30pm-8pm
