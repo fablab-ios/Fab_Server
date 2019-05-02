@@ -1,6 +1,29 @@
-some text
+Hours of operation:
 
-that will be sent
+Monday
+12pm -3pm, 4:30pm-8pm
 
-to the app
+Tuesday
+11pm-8pm
+
+Wednesday
+2pm -8pm
+
+Thursday
+1pm – 7pm
+
+Friday
+2pm – 6pm
+
+Saturday
+2pm – 5pm
+
+Address:
+242 Votey, UVM Main Campus
+
+Email:
+fablab@uvm.edu
+
+Note that we are closed during UVM observed holidays and during student vacations.
+
 
